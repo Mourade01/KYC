@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.projet.kyc">
+    package="com.example.mobilekyc">
    <application
-        android:label="mrz"
+        android:label="mobilekyc"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

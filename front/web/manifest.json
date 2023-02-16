@@ -1,6 +1,6 @@
 {
-    "name": "mrz",
-    "short_name": "mrz",
+    "name": "mobilekyc",
+    "short_name": "mobilekyc",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

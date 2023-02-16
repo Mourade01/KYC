@@ -84,13 +84,13 @@ class _ScanIDState extends State<ScanID> {
     // Set the license key depending on the target platform you are building for.
     if (Theme.of(context).platform == TargetPlatform.iOS) {
       license =
-          "sRwAAAAOY29tLnByb2pldC5reWPFlK2+FTi+PsgW7jeCckK8oTaTUZf895CejLngj2ObxmlkE8YuOhQOs+3TNknycfCKKavV6SM2gyP5LHbaW9eUUK5TcW5NfXy36wZA+cpqZRRudAmI47xtLhgB3qjjUKN3FnqlxzR5u2WNv+3b3d8MkvIc/8GNhi4IYdv5fLrV4turDavt5qiq6waG03GIY4dhXd+yrSUfypoEhePz+ZmdA9YnUmRS/f+6M7USvf8QYw==";
+          "sRwAAAAOY29tLnByb2pldC5reWPFlK2+FTi+PsgW7jeCAmEXQVuYI2lyi+TeUYxdiOAeBZffq4OVxrsXZW1sQzbNJVpCPBnfeJO4S5dsp7M8nL+wXuiwYRIv7MT7g3BISAoVXVANNWpC+wsG/PprBgGIqIlH42G0aX9Z8A0M/EBvWVMMM7Dv2vCFcJiAYp5jMtOkyYTdJW5q5r8DUPeJctMu4Xc5Hf3tl2oqU+v77bM769xI2K0H85X8hq6uqz/nopZWNQ==";
     } else if (Theme.of(context).platform == TargetPlatform.android) {
       license =
-          "sRwAAAAOY29tLnByb2pldC5reWPFlK2+FTi+PsgW7jeCckK8oTaTUZf895CejLngj2ObxmlkE8YuOhQOs+3TNknycfCKKavV6SM2gyP5LHbaW9eUUK5TcW5NfXy36wZA+cpqZRRudAmI47xtLhgB3qjjUKN3FnqlxzR5u2WNv+3b3d8MkvIc/8GNhi4IYdv5fLrV4turDavt5qiq6waG03GIY4dhXd+yrSUfypoEhePz+ZmdA9YnUmRS/f+6M7USvf8QYw==";
+          "sRwAAAAOY29tLnByb2pldC5reWPFlK2+FTi+PsgW7jeCAmEXQVuYI2lyi+TeUYxdiOAeBZffq4OVxrsXZW1sQzbNJVpCPBnfeJO4S5dsp7M8nL+wXuiwYRIv7MT7g3BISAoVXVANNWpC+wsG/PprBgGIqIlH42G0aX9Z8A0M/EBvWVMMM7Dv2vCFcJiAYp5jMtOkyYTdJW5q5r8DUPeJctMu4Xc5Hf3tl2oqU+v77bM769xI2K0H85X8hq6uqz/nopZWNQ==";
     } else {
       license =
-          "sRwAAAAOY29tLnByb2pldC5reWPFlK2+FTi+PsgW7jeCckK8oTaTUZf895CejLngj2ObxmlkE8YuOhQOs+3TNknycfCKKavV6SM2gyP5LHbaW9eUUK5TcW5NfXy36wZA+cpqZRRudAmI47xtLhgB3qjjUKN3FnqlxzR5u2WNv+3b3d8MkvIc/8GNhi4IYdv5fLrV4turDavt5qiq6waG03GIY4dhXd+yrSUfypoEhePz+ZmdA9YnUmRS/f+6M7USvf8QYw==";
+          "sRwAAAAOY29tLnByb2pldC5reWPFlK2+FTi+PsgW7jeCAmEXQVuYI2lyi+TeUYxdiOAeBZffq4OVxrsXZW1sQzbNJVpCPBnfeJO4S5dsp7M8nL+wXuiwYRIv7MT7g3BISAoVXVANNWpC+wsG/PprBgGIqIlH42G0aX9Z8A0M/EBvWVMMM7Dv2vCFcJiAYp5jMtOkyYTdJW5q5r8DUPeJctMu4Xc5Hf3tl2oqU+v77bM769xI2K0H85X8hq6uqz/nopZWNQ==";
     }
 
     var idRecognizer = BlinkIdCombinedRecognizer();
