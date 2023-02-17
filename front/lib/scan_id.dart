@@ -84,13 +84,13 @@ class _ScanIDState extends State<ScanID> {
     // Set the license key depending on the target platform you are building for.
     if (Theme.of(context).platform == TargetPlatform.iOS) {
       license =
-          "sRwAAAAOY29tLnByb2pldC5reWPFlK2+FTi+PsgW7jeCAmEXQVuYI2lyi+TeUYxdiOAeBZffq4OVxrsXZW1sQzbNJVpCPBnfeJO4S5dsp7M8nL+wXuiwYRIv7MT7g3BISAoVXVANNWpC+wsG/PprBgGIqIlH42G0aX9Z8A0M/EBvWVMMM7Dv2vCFcJiAYp5jMtOkyYTdJW5q5r8DUPeJctMu4Xc5Hf3tl2oqU+v77bM769xI2K0H85X8hq6uqz/nopZWNQ==";
+          "sRwAAAAUY29tLnByb2pldC5tb2JpbGVreWMRqxd32LV0D7hJfts7i/49sXA1O3RlyS1+hzJrCdBdhq5ikhhILWqKLcr5SHvy8JeDEuZIAWR8+mZCogiXsCqFhmGCVAs5sSB2BKzK6i/cc6etacv3qAHeaxf8zTyWiX/H4PeViJ1Il5y6hvtffV+QOZ1HRsSes/WXwCbRxWoOr4/98dK9Vdwfwxrpa0dNf8Tl9hQKRBo01lu9bZP8NznvQAMSjwJL/kLFT4+mXMEwVg==";
     } else if (Theme.of(context).platform == TargetPlatform.android) {
       license =
-          "sRwAAAAOY29tLnByb2pldC5reWPFlK2+FTi+PsgW7jeCAmEXQVuYI2lyi+TeUYxdiOAeBZffq4OVxrsXZW1sQzbNJVpCPBnfeJO4S5dsp7M8nL+wXuiwYRIv7MT7g3BISAoVXVANNWpC+wsG/PprBgGIqIlH42G0aX9Z8A0M/EBvWVMMM7Dv2vCFcJiAYp5jMtOkyYTdJW5q5r8DUPeJctMu4Xc5Hf3tl2oqU+v77bM769xI2K0H85X8hq6uqz/nopZWNQ==";
+          "sRwAAAAUY29tLnByb2pldC5tb2JpbGVreWMRqxd32LV0D7hJfts7i/49sXA1O3RlyS1+hzJrCdBdhq5ikhhILWqKLcr5SHvy8JeDEuZIAWR8+mZCogiXsCqFhmGCVAs5sSB2BKzK6i/cc6etacv3qAHeaxf8zTyWiX/H4PeViJ1Il5y6hvtffV+QOZ1HRsSes/WXwCbRxWoOr4/98dK9Vdwfwxrpa0dNf8Tl9hQKRBo01lu9bZP8NznvQAMSjwJL/kLFT4+mXMEwVg==";
     } else {
       license =
-          "sRwAAAAOY29tLnByb2pldC5reWPFlK2+FTi+PsgW7jeCAmEXQVuYI2lyi+TeUYxdiOAeBZffq4OVxrsXZW1sQzbNJVpCPBnfeJO4S5dsp7M8nL+wXuiwYRIv7MT7g3BISAoVXVANNWpC+wsG/PprBgGIqIlH42G0aX9Z8A0M/EBvWVMMM7Dv2vCFcJiAYp5jMtOkyYTdJW5q5r8DUPeJctMu4Xc5Hf3tl2oqU+v77bM769xI2K0H85X8hq6uqz/nopZWNQ==";
+          "sRwAAAAUY29tLnByb2pldC5tb2JpbGVreWMRqxd32LV0D7hJfts7i/49sXA1O3RlyS1+hzJrCdBdhq5ikhhILWqKLcr5SHvy8JeDEuZIAWR8+mZCogiXsCqFhmGCVAs5sSB2BKzK6i/cc6etacv3qAHeaxf8zTyWiX/H4PeViJ1Il5y6hvtffV+QOZ1HRsSes/WXwCbRxWoOr4/98dK9Vdwfwxrpa0dNf8Tl9hQKRBo01lu9bZP8NznvQAMSjwJL/kLFT4+mXMEwVg==";
     }
 
     var idRecognizer = BlinkIdCombinedRecognizer();
@@ -155,6 +155,7 @@ class _ScanIDState extends State<ScanID> {
         buildResult(result.race, "Race") +
         buildResult(result.religion, "Religion") +
         buildResult(result.residentialStatus, "Residential Status") +
+        buildResult(result.mrzResult!.mrzText, "MRZ Text") +
         buildDriverLicenceResult(result.driverLicenseDetailedInfo);
   }
 

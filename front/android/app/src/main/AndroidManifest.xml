@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mobilekyc">
+    package="com.projet.mobilekyc">
    <application
         android:label="mobilekyc"
         android:name="${applicationName}"

@@ -72,7 +72,7 @@ class _IntroPageState extends State<IntroPage> {
                 ),
               ),
               body:
-                  "Rigid belief systems, including skeptism, is signing up for the suppression of curiosity.",
+                  "Register using KYC: verify identity & info to comply with regulations and prevent fraud.",
               title: "Sign Up",
             ),
             PageViewModel(

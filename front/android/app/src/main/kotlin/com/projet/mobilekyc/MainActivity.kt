@@ -1,4 +1,4 @@
-package com.example.mobilekyc
+package com.projet.mobilekyc
 
 import io.flutter.embedding.android.FlutterActivity
 
